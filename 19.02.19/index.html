@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homework lesson 2, Korzhak Leonid 19.02.2019</title>
+
+</head>
+<body>
+
+<!--Условные конструкции-->
+<!--Задается последовательно два вопроса:-->
+<!--Сколько лет?-->
+<!--Куришь?-->
+<!--если человеку менее 18 и он не курит, выводится сообщение: Так держать!-->
+<!--если курит: Маме раскажу-->
+<!--если ему более 18 и он не курит, то: Молодец, и не надо-->
+<!--если курит: Ну и зря-->
+<!--* спросить вначале имя, и добавить его в сообщение-->
+
+
+    <script>
+        var name = prompt('Как тебя зовут?', 'Кратос');
+        var age = +prompt('Сколько лет?');
+        var smoke = confirm('Куришь?');
+        var compare = 18 <= age;
+
+        // 1 вариант
+
+        if(compare){
+            if(smoke){
+                alert(name + ' ну и зря')
+            }
+            else{
+                alert(name + ' молодец, и не надо')
+            }
+        } else {
+            if(smoke){
+                alert(name + ' маме раскажу')
+            }
+            else{
+                alert(name + ' так держать!')
+            }
+        }
+
+        // 2 вариант
+
+        // (compare && smoke) && alert(name + ' ну и зря');
+        // (compare && !smoke) && alert(name + ' молодец, и не надо');
+        // (!compare && smoke) && alert(name + ' маме раскажу');
+        // (!compare && !smoke) && alert(name + ' так держать!');
+    </script>
+</body>
+</html>

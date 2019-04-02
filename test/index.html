@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+
+    <style>
+
+        .tab_btn{
+            display: flex;
+        }
+        .tab_btn__btn{
+            width: 100px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: aliceblue;
+            margin: 5px;
+            font-size: 55px;
+            cursor: pointer;
+        }
+        .tab_btn__btn--active{
+            background: red;
+        }
+        .tab_box{
+
+        }
+        .tab_box__content{
+            display: none;
+            text-align: center;
+            font-size: 55px;
+            background: antiquewhite;
+            height: 200px;
+        }
+        .tab_box__content--active{
+            display: block;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="tab_btn">
+            <div class="tab_btn__btn">1</div>
+            <div class="tab_btn__btn">2</div>
+            <div class="tab_btn__btn">3</div>
+            <div class="tab_btn__btn">4</div>
+        </div>
+        <div class="tab_box">
+            <div class="tab_box__content tab_box__content--active" data-content="1">1</div>
+            <div class="tab_box__content" data-content="2">2</div>
+            <div class="tab_box__content" data-content="3">3</div>
+            <div class="tab_box__content" data-content="4">4</div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+</html>

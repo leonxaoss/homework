@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <title>Homework lesson 11</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            padding: 50px;
+        }
+        input[type="number"]{
+            outline: none;
+            border: 1px solid #f26b08;
+            height: 32px;
+            padding: 5px;
+            transition: 0.2s all ease;
+        }
+        input[type="number"]:focus{
+            border: 1px solid aqua;
+        }
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        input[type="radio"]{
+            cursor: pointer;
+        }
+        button{
+            cursor: pointer;
+            border: 1px solid #f26b08;
+            background: #f26b08;
+            display: inline-block;
+            height: 32px;
+            padding: 0 30px;
+            border-radius: 25px;
+            color: #ffffff;
+            transition: 0.3s all ease;
+            outline: none;
+            margin: 0 10px;
+        }
+        button:hover{
+            background: transparent;
+            color: #f26b08;
+        }
+        select{
+            height: 32px;
+            outline: none;
+            border: 1px solid #f26b08;
+            width: 45px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        label{
+            cursor: pointer;
+        }
+        p{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <input type="number" placeholder="" class="enter">
+        <button type="button">Рассчитать</button>
+        <select name="select">
+            <option value="27.26" data-content="26.90">$</option>
+            <option value="30.65" data-content="30.09">€</option>
+            <option value="0.42" data-content="0.36">₽</option>
+        </select>
+        <input type="radio" name="currency" id="buy" placeholder="" checked>
+        <label for="buy">Покупка</label>
+        <input type="radio" name="currency" id="sell" placeholder="">
+        <label for="sell">Продажа</label>
+        <p>0</p>
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+</html>

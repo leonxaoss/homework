@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homework lesson 1, Korzhak Leonid 15.02.2019 V2</title>
+
+</head>
+<body>
+
+<!--При загрузке страницы задается два вопроса:-->
+
+<!--Как тебя зовут? Какого ты года рождения?-->
+<!--И с помощью алерта выводится сообщение с-->
+<!--именем и возрастом. Например, если пользователь-->
+<!--ответил "Юра" и "1989" то выводится "Юра 29"-->
+
+
+    <script>
+
+        var name = prompt('Как тебя зовут?');
+        var year = +prompt('Какого ты года рождения?');
+        var age = new Date().getFullYear() - year;
+
+        if(isNaN(age)){
+            alert(name + ' вы ввели не год')
+        } else if(year === 0){
+            alert(name + ' вы не ввели год')
+        } else{
+            alert(name + ' ' + age);
+        }
+
+        // window.onload  = function () {
+        //     var name = prompt('Как тебя зовут?');
+        //     var year = +prompt('Какого ты года рождения?');
+        //     var age = new Date().getFullYear() - year;
+        //
+        //
+        //     if(!isNaN(age)){
+        //         alert(name + ' ' + age);
+        //     }else{
+        //         alert(name + ' вы ввели не год')
+        //     }
+        // };
+
+
+    </script>
+</body>
+</html>
