@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html, body, .container{
+    height: 100%;
+    position: relative;
+}
+
+.flex_box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    padding: 100px;
+}
+
+.block_input{
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.input{
+    outline: none;
+    border: 1px solid #f26b08;
+    height: 43px;
+    padding: 5px;
+    transition: 0.2s all ease;
+    border-radius: 10px;
+    width: 215px;
+}
+.input:focus{
+    border: 1px solid aqua;
+}
+.input--false:focus{
+    border: 1px solid red;
+}
+
+.label_error{
+    position: absolute;
+    left: 5px;
+    bottom: -5px;
+    transform: translateY(100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.2s all ease;
+    color: red;
+}
+
+.input--false ~ .label_error{
+    opacity: 1;
+    visibility: visible;
+}
+
+.btn_add{
+    border: 1px solid #f26b08;
+    background: #f26b08;
+    color: #ffffff;
+    padding: 10px 50px;
+    transition: 0.3s all ease;
+    outline: none;
+    margin:  0 15px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn_add:hover{
+    border: 1px solid #f26b08;
+    background: transparent;
+    color: #f26b08;
+}
+
+.btn_hide{
+    transition: 0.3s all ease;
+    outline: none;
+    cursor: pointer;
+    background: #f26b08;
+    height: 43px;
+    border: 1px solid #f26b08;
+    border-radius: 10px;
+    opacity: 0.5;
+}
+.btn_hide--active{
+    opacity: 1;
+}
+.btn_hide svg{
+    display: block;
+    max-width: 90%;
+    max-height: 100%;
+    margin: auto;
+    transition: 0.3s all ease;
+}
+.btn_hide svg path{
+    transition: 0.3s all ease;
+    fill: #ffffff;
+}
+.btn_hide:hover{
+    background: transparent;
+}
+.btn_hide:hover svg path{
+    fill: #f26b08;
+}
+
+.block_output{
+    list-style: none;
+    max-width: 300px;
+}
+
+.block_output li{
+    border: 1px solid #f26b08;
+    padding: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn_cont{
+    display: flex;
+    align-items: center;
+}
+
+.block_output li.li_done{
+    border: 1px solid gray;
+    opacity: 0.5;
+}
+.block_output li.li_done span{
+    text-decoration: line-through;
+}
+.block_output li.li_hide{
+    display: none;
+}
+
+.btn_done, .btn_close{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    position: relative;
+    background: transparent;
+    border-radius: 3px;
+}
+
+.btn_done:before, .btn_close:before, .btn_done:after, .btn_close:after{
+    content: '';
+    position: absolute;
+}
+
+.btn_done:before,  .btn_done:after{
+    background: green;
+    height: 1px;
+}
+
+.btn_done:before{
+    top: 43%;
+    right: 0;
+    width: 78%;
+    transform: rotate(-0.123turn);
+}
+
+.btn_done:after{
+    top: 60%;
+    left: 0;
+    width: 40%;
+    transform: rotate(0.123turn);
+}
+
+.btn_close:before, .btn_close:after{
+    background: red;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+    left: 0;
+}
+.btn_close:before{
+    transform: rotate(-0.123turn);
+}
+.btn_close:after{
+    transform: rotate(0.123turn);
+}
+
+.btn_done{
+    border: 1px solid green;
+}
+
+.btn_close{
+    margin-left: 5px;
+    border: 1px solid red;
+}
+
