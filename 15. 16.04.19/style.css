@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html, body, .container{
+    height: 100%;
+    position: relative;
+}
+
+.flex_box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img_container{
+
+}
+
+.img_container img{
+    display: block;
+}
+
+.rotate{
+    transform: rotate(0.5turn);
+}
