@@ -5,14 +5,14 @@ $(document).ready(function(){
     const strLocal = 'strToDo';
 
     function toggleLocalStorage(){
-        localStorage.setItem(strLocal, blockOutput[0].innerHTML);
+        localStorage.setItem(strLocal, blockOutput.html());
         if(!blockOutput.children().length){
             localStorage.removeItem(strLocal);
         }
     }
 
     function createItem(){
-        blockOutput[0].innerHTML = localStorage.getItem(strLocal);
+        blockOutput.html(localStorage.getItem(strLocal));
     }
 
     if(!localStorage.getItem(strLocal) && blockOutput.children().length){
