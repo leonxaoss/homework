@@ -1,3 +1,5 @@
+// Домашка починається з 146 рядка
+
 function Student(firstName, lastName, born) {
     this.firstName = firstName;
     this.lastName = lastName;
@@ -35,8 +37,7 @@ Student.prototype.absent = function () {
     }
 };
 
-Student.prototype.summary = function () {
-    const mid = this.midBal();
+Student.prototype.presentMid = function () {
     let countPresent = 0;
 
     for (let i = 0; i < this.attendance.length; i++){
@@ -45,16 +46,22 @@ Student.prototype.summary = function () {
         }
     }
 
-    const present = countPresent/this.attendance.length;
+    return countPresent/this.attendance.length;
+};
 
-    if(mid > 90 && present > 0.9){
+Student.prototype.summary = function () {
+    const mid = this.midBal();
+    const midPres = this.presentMid();
+
+    if(mid > 90 && midPres > 0.9){
         return "Ути какой молодчинка!";
-    } else if(mid > 90 || present > 0.9){
+    } else if(mid > 90 || midPres > 0.9){
         return "Норм, но можно лучше";
     } else {
         return "Редиска!"
     }
 };
+
 
 // Leonid
 
@@ -74,6 +81,7 @@ studentLeonid.absent();
 console.log('Возраст', studentLeonid.age());
 console.log('Средний бал', studentLeonid.midBal());
 console.log(studentLeonid.summary());
+console.log(studentLeonid.presentMid());
 console.log(studentLeonid);
 
 // Denis
@@ -94,6 +102,7 @@ studentDenis.absent();
 console.log('Возраст', studentDenis.age());
 console.log('Средний бал', studentDenis.midBal());
 console.log(studentDenis.summary());
+console.log(studentDenis.presentMid());
 console.log(studentDenis);
 
 // Oleksandr
@@ -116,6 +125,7 @@ studentOleksandr.absent();
 console.log('Возраст', studentOleksandr.age());
 console.log('Средний бал', studentOleksandr.midBal());
 console.log(studentOleksandr.summary());
+console.log(studentOleksandr.presentMid());
 console.log(studentOleksandr);
 
 
@@ -133,65 +143,79 @@ console.log(studentOleksandr);
 //
 // .performance — то же самое, но с оценками
 
-function Arr(){
+function StudentArr(){}
 
-    this.arr = [];
+StudentArr.prototype = Array.prototype;
 
-    this.arr.attendance = function (lastName) {
-        return studentDenis.midBal();
-    };
+StudentArr.prototype.attendance = function (lastName) {
 
-    this.arr.performance  = function (lastName) {
+    function sortPresent(studentA, studentB) {
+        return studentB.presentMid() - studentA.presentMid();
+    }
 
-        function sortBal(studentA, studentB) {
-            return studentB.midBal() - studentA.midBal();
-        }
+    if(lastName){
+        let pos = 0;
 
-        if(lastName){
+        this.sort(sortPresent);
 
-            let pos = 0;
-
-            this.sort(sortBal);
-
-            function sd(item) {
-                return item === lastName;
+        this.forEach(function (item, i) {
+            if (item.lastName === lastName){
+                return pos = i + 1;
             }
+        });
 
-            if (this.every(function () {
+        return pos;
+    } else {
+        let sum = 0;
 
-            })) {
+        this.forEach(function (item) {
+            sum += item.presentMid()
+        });
 
+        return sum/this.length
+    }
+};
+
+StudentArr.prototype.performance  = function (lastName) {
+
+    function sortBal(studentA, studentB) {
+        return studentB.midBal() - studentA.midBal();
+    }
+
+    if(lastName){
+        let pos = 0;
+
+        this.sort(sortBal);
+
+        this.forEach(function (item, i) {
+            if (item.lastName === lastName){
+                return pos = i + 1;
             }
+        });
 
-            this.forEach(function (item, i) {
-                if (item.lastName === lastName){
-                    return pos = i + 1;
-                }
-            });
+        return pos;
+    } else {
+        let sum = 0;
 
-            return pos;
-        } else {
-            let sum = 0;
+        this.forEach(function (item) {
+            sum += item.midBal();
+        });
 
-            this.forEach(function (item) {
-                sum += item.midBal();
-            });
+        return sum/this.length
+    }
 
-            return sum/this.length
-        }
+};
 
-    };
+const studentList = new StudentArr();
+const korzhak = 'Korzhak';
 
-    return this.arr;
-}
+studentList.push(studentLeonid);
+studentList.push(studentDenis);
+studentList.push(studentOleksandr);
 
-const test = new Arr();
-
-test.push(studentLeonid);
-test.push(studentDenis);
-test.push(studentOleksandr);
-
-
-console.log(test);
-console.log('Место в рейтенге - ', test.performance('Korzhak'));
-console.log('Средний бал группы - ', test.performance());
+console.log('==================================================================');
+console.log(studentList);
+console.log('Место в рейтенге по посещаемости студента '+ korzhak + ' -', studentList.attendance(korzhak));
+console.log('Средняя посещаемость группы за одно занятие - ', studentList.attendance());
+console.log('Место в рейтенге по оценкам студента '+ korzhak + ' -', studentList.performance(korzhak));
+console.log('Средний бал группы за одно занятие - ', studentList.performance());

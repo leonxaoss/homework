@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="db3f025e-544d-49a8-8a95-85a6614e5ac2" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/17. 23.04.19/game.zip" beforeDir="false" afterPath="$PROJECT_DIR$/17. 23.04.19/game.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/18. 03.05.19/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/18. 03.05.19/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ToDo_jquery_localStorage.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/script.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,26 +14,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.29864636">
+    <splitter split-orientation="horizontal" split-proportion="0.38541666">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/18. 03.05.19/index.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="306">
-                  <caret line="27" column="14" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
-                  <folding>
-                    <element signature="n#svg#0;n#button#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/17. 23.04.19/game/index.html">
+            <entry file="file://$PROJECT_DIR$/19. 07.05.19/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="204">
-                  <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+                <state relative-caret-position="68">
+                  <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
                 </state>
               </provider>
             </entry>
@@ -41,16 +30,20 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/18. 03.05.19/style.css">
-              <provider selected="true" editor-type-id="text-editor" />
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/19. 07.05.19/script.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="498">
+                  <caret line="206" column="2" lean-forward="true" selection-start-line="206" selection-start-column="2" selection-end-line="206" selection-end-column="2" />
+                </state>
+              </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/18. 03.05.19/script.js">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/test/script.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="119">
-                  <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+                <state relative-caret-position="3332">
+                  <caret line="196" column="57" selection-start-line="121" selection-end-line="196" selection-end-column="57" />
                 </state>
               </provider>
             </entry>
@@ -61,8 +54,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>nav_contact</find>
-      <find>&lt;a href=&quot;tel:0800330917&quot; class=&quot;cont_href&quot;&gt;&lt;img src=&quot;./img/header/phone.svg&quot; alt=&quot;&quot;&gt;&lt;span&gt;0 800 330 917&lt;/span&gt;&lt;/a&gt;</find>
       <find>.winner_form__block .partners_form__box input</find>
       <find>.contact_line</find>
       <find>lin</find>
@@ -91,6 +82,8 @@
       <find>block_input</find>
       <find>addNewItemLocalStorage</find>
       <find>togleLocalStorage</find>
+      <find>presentMid</find>
+      <find>performance</find>
     </findStrings>
     <replaceStrings>
       <replace>&lt;a href=&quot;./doc/Buklet_TM_TETSTONE_01.04.2018.pdf&quot; class=&quot;btn_href btn_href__download&quot; target=&quot;_blank&quot;&gt;&lt;span&gt;Скачать прайс&lt;/span&gt;&lt;/a&gt;</replace>
@@ -121,9 +114,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/01.03.19/index.html" />
-        <option value="$PROJECT_DIR$/05.03.19/callFunction/index.html" />
-        <option value="$PROJECT_DIR$/05.03.19/cloneArray/index.html" />
         <option value="$PROJECT_DIR$/05.03.19/sumFunction/index.html" />
         <option value="$PROJECT_DIR$/05.03.19/3Function/index.html" />
         <option value="$PROJECT_DIR$/05.03.19/sumFunction/script.js" />
@@ -172,6 +162,9 @@
         <option value="$PROJECT_DIR$/18. 03.05.19/index.html" />
         <option value="$PROJECT_DIR$/17. 23.04.19/game/script.js" />
         <option value="$PROJECT_DIR$/18. 03.05.19/script.js" />
+        <option value="$PROJECT_DIR$/functionConsructor/script.js" />
+        <option value="$PROJECT_DIR$/19. 07.05.19/index.html" />
+        <option value="$PROJECT_DIR$/19. 07.05.19/script.js" />
       </list>
     </option>
   </component>
@@ -181,11 +174,11 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-482" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -193,7 +186,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -209,18 +201,18 @@
             <path>
               <item name="homework" type="b2602c69:ProjectViewProjectNode" />
               <item name="homework" type="462c0819:PsiDirectoryNode" />
-              <item name="17. 23.04.19" type="462c0819:PsiDirectoryNode" />
-              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="19. 07.05.19" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="homework" type="b2602c69:ProjectViewProjectNode" />
               <item name="homework" type="462c0819:PsiDirectoryNode" />
-              <item name="18. 03.05.19" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -362,18 +354,23 @@
       <workItem from="1556899262381" duration="6733000" />
       <workItem from="1556983871897" duration="9418000" />
       <workItem from="1557039570426" duration="7650000" />
-      <workItem from="1557166496472" duration="607000" />
+      <workItem from="1557166496472" duration="1461000" />
+      <workItem from="1557248190731" duration="1834000" />
+      <workItem from="1557256643673" duration="2735000" />
+      <workItem from="1557337788303" duration="9244000" />
+      <workItem from="1557416469238" duration="6158000" />
+      <workItem from="1557472287682" duration="3205000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="666513000" />
+    <option name="totallyTimeSpent" value="690543000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12053572" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.11755952" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -385,7 +382,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.21767594" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.18418202" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -398,10 +395,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/12.03.19/funcNam/script.js" />
-    <entry file="file://$PROJECT_DIR$/19.03.19/1.PrimMethods/index.html" />
-    <entry file="file://$PROJECT_DIR$/19.03.19/2.genList/index.html" />
-    <entry file="file://$PROJECT_DIR$/19.03.19/3.Table/index.html" />
     <entry file="file://$PROJECT_DIR$/19.03.19/3.Table/script.js" />
     <entry file="file://$PROJECT_DIR$/19.03.19/1.PrimMethods/script.js" />
     <entry file="file://$PROJECT_DIR$/19.03.19/2.genList/script.js" />
@@ -424,13 +417,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/22.03.19/2.Kv/script.js" />
     <entry file="file://$PROJECT_DIR$/22.03.19/3.List/script.js" />
-    <entry file="file://$PROJECT_DIR$/test/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/22.03.19/3.List/index.html" />
     <entry file="file://$PROJECT_DIR$/26.03.19/index.html" />
     <entry file="file://$PROJECT_DIR$/26.03.19/style.css" />
@@ -572,13 +558,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/17. 23.04.19/functionConsructor/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="30" column="12" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/13. 09.04.19/script.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -587,26 +566,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/3. 22.02.19/script.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/18. 03.05.19/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="27" column="14" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
-          <folding>
-            <element signature="n#svg#0;n#button#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/17. 23.04.19/game/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/18. 03.05.19/style.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/17. 23.04.19/game/script.js">
@@ -619,10 +578,67 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/17. 23.04.19/game/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/18. 03.05.19/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="170">
+          <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/18. 03.05.19/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functionConsructor/script.js" />
+    <entry file="file://$PROJECT_DIR$/functionConsructor/index.html" />
+    <entry file="file://$PROJECT_DIR$/18. 03.05.19/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="33" column="28" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
+          <folding>
+            <element signature="n#svg#0;n#button#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/17. 23.04.19/functionConsructor/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="986">
+          <caret line="88" column="2" selection-start-line="32" selection-end-line="88" selection-end-column="2" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/19. 07.05.19/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/19. 07.05.19/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="206" column="2" lean-forward="true" selection-start-line="206" selection-start-column="2" selection-end-line="206" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3332">
+          <caret line="196" column="57" selection-start-line="121" selection-end-line="196" selection-end-column="57" />
         </state>
       </provider>
     </entry>
