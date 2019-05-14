@@ -145,7 +145,7 @@ console.log(studentOleksandr);
 
 function StudentArr(){}
 
-StudentArr.prototype = Array.prototype;
+StudentArr.prototype = [];
 
 StudentArr.prototype.attendance = function (lastName) {
 
@@ -154,25 +154,26 @@ StudentArr.prototype.attendance = function (lastName) {
     }
 
     if(lastName){
-        let pos = 0;
-
         this.sort(sortPresent);
+
+        let pos = 0;
 
         this.forEach(function (item, i) {
             if (item.lastName === lastName){
-                return pos = i + 1;
+                pos = i + 1;
             }
         });
 
         return pos;
+
+        // тут я зробив методом масивів
+        // return this.findIndex(function (item) {
+        //     return item.lastName === lastName
+        // }) + 1;
     } else {
-        let sum = 0;
-
-        this.forEach(function (item) {
-            sum += item.presentMid()
-        });
-
-        return sum/this.length
+        return this.reduce(function (sum, curr) {
+            return sum + curr.presentMid();
+        }, 0) / this.length;
     }
 };
 
@@ -183,25 +184,27 @@ StudentArr.prototype.performance  = function (lastName) {
     }
 
     if(lastName){
-        let pos = 0;
-
         this.sort(sortBal);
+
+        let pos = 0;
 
         this.forEach(function (item, i) {
             if (item.lastName === lastName){
-                return pos = i + 1;
+                pos = i + 1;
             }
         });
 
         return pos;
+
+        // тут я зробив методом масивів
+        // return this.findIndex(function (item) {
+        //     return item.lastName === lastName
+        // }) + 1;
+
     } else {
-        let sum = 0;
-
-        this.forEach(function (item) {
-            sum += item.midBal();
-        });
-
-        return sum/this.length
+        return this.reduce(function (sum, curr) {
+            return sum + curr.midBal();
+        }, 0) / this.length;
     }
 
 };
