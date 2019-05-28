@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html, body, .container{
+    height: 100%;
+    position: relative;
+}
+.container{
+    margin: auto;
+}
+img{
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+    margin: auto;
+}
+.flex_box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slider{
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider_arrow{
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: url("arrow_orange.svg") no-repeat center center;
+    width: 25px;
+    height: 50px;
+}
+.slider_arrow--prev{
+    left: 25px;
+    transform: translateY(-50%) rotate(0.5turn);
+}
+.slider_arrow--next{
+    right: 25px;
+}
+
+.slider_box{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.slide{
+    position: relative;
+    display: none;
+}
+
+.slide--active{
+    display: block;
+}
