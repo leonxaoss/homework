@@ -14,14 +14,15 @@ xhr.send();
 
 xhr.addEventListener('readystatechange', function () {
     if (xhr.status === 200 && xhr.readyState === 4) {
-        let data = JSON.parse(xhr.responseText);
+        const data = JSON.parse(xhr.responseText);
 
         data.forEach( item => {
             const option = document.createElement('option');
             const p = document.createElement('p');
 
             option.textContent = item.cc;
-            option.value = item.rate;
+            // option.value = item.rate;
+            option.value = item.cc;
             option.title = item.txt;
             currency.appendChild(option);
             p.textContent = item.cc + ' - ' + item.txt;
@@ -31,9 +32,23 @@ xhr.addEventListener('readystatechange', function () {
 });
 
 btn.addEventListener('click', function () {
-    const valutInputs = document.querySelectorAll('.check_block input');
-    const check = [].find.call(valutInputs,  item => item.checked === true);
+    const check = document.querySelector('.check_block input:checked');
 
-    result.textContent = (+input.value * +currency.value * +check.value);
+    xhr.open('GET', url, true);
+    xhr.send();
+
+    xhr.addEventListener('readystatechange', function () {
+        if (xhr.status === 200 && xhr.readyState === 4) {
+            const data = JSON.parse(xhr.responseText);
+
+            const actualVal = data.find( item => {
+                return item.cc === currency.value
+            });
+
+            result.textContent = (+input.value * +actualVal.rate * +check.value);
+        }
+    });
+
+    // result.textContent = (+input.value * +currency.value * +check.value);
 });
 
