@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <title>Homework lesson 25</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            padding: 50px;
+        }
+        input[type="number"]{
+            outline: none;
+            border: 1px solid #f26b08;
+            height: 32px;
+            padding: 5px;
+            transition: 0.2s all ease;
+        }
+        input[type="number"]:focus{
+            border: 1px solid aqua;
+        }
+        input[type="radio"]{
+            cursor: pointer;
+        }
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        button{
+            cursor: pointer;
+            border: 1px solid #f26b08;
+            background: #f26b08;
+            display: inline-block;
+            height: 32px;
+            padding: 0 30px;
+            border-radius: 25px;
+            color: #ffffff;
+            transition: 0.3s all ease;
+            outline: none;
+            margin: 0 10px;
+        }
+        button:hover{
+            background: transparent;
+            color: #f26b08;
+        }
+        select{
+            height: 32px;
+            outline: none;
+            border: 1px solid #f26b08;
+            /*width: 45px;*/
+            font-size: 18px;
+            cursor: pointer;
+        }
+        option{
+            cursor: pointer;
+        }
+        label{
+            cursor: pointer;
+        }
+
+        p{
+            font-size: 20px;
+        }
+        .check_block{
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <input type="number" placeholder="" class="enter" value="100">
+        <button type="button">Розрахувати</button>
+        <select name="select"></select>
+        <div class="check_block">
+            <input type="radio" name="valute" checked id="buy" value="0.993">
+            <label for="buy">Продажа</label>
+            <input type="radio" name="valute" id="sale" value="1.007">
+            <label for="sale">Покупка</label>
+        </div>
+        <p>0</p>
+        <div class="description"></div>
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+</html>
