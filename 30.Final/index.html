@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <title>Notebook</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+    <div class="notebook">
+        <div class="notebook_nav">
+            <h1>Записник</h1>
+            <div class="search">
+                <input type="search" placeholder="Введіть дані для пошуку" class="input_search">
+            </div>
+            <div class="btn_block">
+                <button class="all_contacts btn_nav" data-btn="1"><span>Всі контакти</span></button>
+            </div>
+            <div class="btn_block">
+                <button class="add_contacts btn_nav" data-btn="2"><span>Добавити контакт</span></button>
+            </div>
+            <div class="birthday_block">
+                <h4>Дні народження</h4>
+                <div class="birthday_container">
+
+                </div>
+            </div>
+        </div>
+        <div class="notebook_container">
+
+            <div class="contact_none notebook_content">
+                <h2>Контактів поки що немає</h2>
+                <p>Скористайтесь кнопкою 'Добавити контакт'</p>
+            </div>
+
+            <div class="contact_info_block notebook_content">
+            </div>
+
+            <div class="contact_edit notebook_content">
+
+            </div>
+
+
+            <div class="notebook_contact notebook_content" data-content="1">
+                <h2>Контакти</h2>
+                <div class="contact_block">
+
+                </div>
+            </div>
+
+            <div class="form_add notebook_content" data-content="2">
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <template class="form_contact">
+        <div class="contact_id">
+            <h2>Редагувати контакт</h2>
+            <div class="block_input">
+                <div class="box_input box_input__file">
+                    <h3>Фото</h3>
+                    <div class="box_file {{activeFile}}">
+                        <input type="file" placeholder="" id="input_img" accept=".png, .jpg, .jpeg">
+                        <label for="input_img" class="label_file">Завантажити фото</label>
+                    </div>
+                    <div class="box_img {{activeImg}}">
+                        <div class="delete_img">x</div>
+                        {{srcImg}}
+                    </div>
+                </div>
+            </div>
+            <div class="block_input">
+                <div class="box_input">
+                    <h3>Ім'я *</h3>
+                    <input type="text" placeholder="" class="input_name item_required" value="{{firstName}}">
+                    <label class="label_error">Поле не може бути пустим</label>
+                </div>
+                <div class="box_input">
+                    <h3>Прізвище *</h3>
+                    <input type="text" placeholder="" class="input_surname item_required" value="{{surName}}">
+                    <label class="label_error">Поле не може бути пустим</label>
+                </div>
+            </div>
+            <div class="block_input block_input--tel">
+                {{contactTel}}
+<!--                <div class="box_input">-->
+<!--                    <h3>Телефон *</h3>-->
+<!--                    <input type="number" placeholder="" class="input_tel item_required">-->
+<!--                    <label class="label_error">Поле не може бути пустим</label>-->
+<!--                    <div class="close_tel">x</div>-->
+<!--                </div>-->
+            </div>
+            <div class="block_input">
+                <div class="box_input">
+                    <button class="btn_add_tel"><span>Добавити телефон</span></button>
+                </div>
+            </div>
+            <div class="block_input">
+                <div class="box_input">
+                    <h3>Дата народження</h3>
+                    <input type="date" placeholder="" class="input_born" value="{{dataBorn}}">
+                </div>
+            </div>
+            <div class="block_input">
+                <div class="box_input">
+                    <h3>Помітки</h3>
+                    <textarea placeholder="" class="text_other">{{contactText}}</textarea>
+                </div>
+            </div>
+            <div class="block_input">
+                <div class="box_input">
+                    <button class="btn_save"><span>Зберегти контакт</span></button>
+                </div>
+            </div>
+        </div>
+
+    </template>
+
+    <template class="tel_contact">
+        <h3>Телефон *</h3>
+        <input type="number" placeholder="" class="input_tel item_required">
+        <label class="label_error">Поле не може бути пустим</label>
+        <div class="close_tel">x</div>
+    </template>
+
+    <template class="show_contact">
+        <div class="contact_info contact_id" id="{{id}}">
+            <div class="box_img">
+                {{srcImg}}
+            </div>
+            <div class="contact_description">
+                <h4><span class="name">{{firstName}}</span> <span class="surname">{{surName}}</span></h4>
+                <h5 class="date_born"><span>{{dataBorn}}</span></h5>
+                <div class="contact_description_tel">
+                    {{contactTel}}
+                </div>
+                <p class="more_info">
+                    {{contactText}}
+                </p>
+                <button class="contact_btn--edit btn_nav" data-btn="2"><span>Редагувати контакт</span></button>
+                <button class="contact_btn--delete btn_nav" data-btn="2"><span>Видалити контакт</span></button>
+            </div>
+        </div>
+    </template>
+
+    <template class="contact_temp">
+        <div class="contact_box contact_id" id="{{id}}">
+            <div class="box_img">
+                {{srcImg}}
+            </div>
+            <div class="contact_description">
+                <h4><span class="name">{{firstName}}</span> <span class="surname">{{surName}}</span></h4>
+                <a href="tel:{{tel}}">{{tel}}</a>
+            </div>
+            <div class="more_contact">
+                <span class="more_touch"></span>
+                <span class="more_touch"></span>
+                <span class="more_touch"></span>
+                <div class="contact_nav">
+                    <button class="contact_btn contact_btn--show"><span>Переглянути</span></button>
+                    <button class="contact_btn contact_btn--edit"><span>Редагувати</span></button>
+                    <button class="contact_btn contact_btn--delete"><span>Видалити</span></button>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <template class="birthday_template">
+        <div class="birthday_box">
+            <div class="box_img">
+                {{srcImg}}
+            </div>
+            <div class="contact_description">
+                <h4><span class="name">{{firstName}}</span> <span class="surname">{{surName}}</span></h4>
+            </div>
+        </div>
+    </template>
+
+    <script src="./script.js"></script>
+
+</body>
+</html>

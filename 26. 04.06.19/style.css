@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html, body, .container{
+    height: 100%;
+    position: relative;
+}
+
+.flex_box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    padding: 100px;
+}
+
+.block_input{
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.input_enter{
+    outline: none;
+    border: 1px solid #f26b08;
+    height: 43px;
+    padding: 5px;
+    transition: 0.2s all ease;
+    border-radius: 10px;
+    width: 215px;
+}
+.input_enter:focus{
+    border: 1px solid aqua;
+}
+
+.block_search{
+    list-style: none;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+.block_search li{
+    margin-bottom: 5px;
+}

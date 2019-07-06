@@ -1,0 +1,47 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+
+.block_input{
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+input{
+  outline: none;
+  border: 1px solid #f26b08;
+  height: 43px;
+  padding: 5px;
+  transition: 0.2s all ease;
+  border-radius: 10px;
+  width: 215px;
+}
+input:focus{
+  border: 1px solid aqua;
+}
+
+
+.btn_calc{
+  border: 1px solid #f26b08;
+  background: #f26b08;
+  color: #ffffff;
+  padding: 10px 50px;
+  transition: 0.3s all ease;
+  outline: none;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.btn_calc:hover{
+  border: 1px solid #f26b08;
+  background: transparent;
+  color: #f26b08;
+}
